@@ -1,0 +1,4 @@
+#Day-002/check-if-all-as-appears-before-all-bs.py
+class Solution:
+    def checkString(self, s: str) -> bool:
+        return 'ba' not in s
