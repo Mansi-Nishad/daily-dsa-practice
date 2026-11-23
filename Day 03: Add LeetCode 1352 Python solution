@@ -1,0 +1,24 @@
+class ProductOfNumbers:
+
+    def __init__(self):
+        # Create an empty list to store the numbers
+        self.nums = []
+
+    def add(self, num: int) -> None:
+        # Add the new number at the end of the list
+        self.nums.append(num)
+
+    def getProduct(self, k: int) -> int:
+        # Initialize product with 1
+        product = 1
+
+        # Calculate the starting index of the last k numbers
+        start = len(self.nums) - k
+
+        # Iterate through the last k numbers
+        for i in range(start, len(self.nums)):
+            # Multiply each number
+            product *= self.nums[i]
+
+        # Return the final product
+        return product
